@@ -1,0 +1,11 @@
+AuthorName: Powerkrieger
+Categories:
+  - Money
+WebSite: https://github.com/Powerkrieger/GasTrack
+SourceCode: https://github.com/Powerkrieger/GasTrack
+IssueTracker: https://github.com/Powerkrieger/GasTrack/issues
+
+Name: GasTrack
+Summary: 'Log fuel purchases and track costs over time'
+Description: |-
+  A minimal app for logging fuel purchases and tracking costs over time.

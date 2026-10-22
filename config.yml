@@ -1,0 +1,13 @@
+# fdroidserver config. No secrets here: passwords come from the environment
+# (locally: fdroid-repo.env, in CI: repository secrets).
+repo_url: https://powerkrieger.github.io/fdroid/repo
+repo_name: Powerkrieger Apps
+repo_description: >-
+  Android apps by Powerkrieger, built and signed by GitHub Actions from the
+  source repositories at https://github.com/Powerkrieger.
+
+keystore: fdroid-repo.jks
+repo_keyalias: fdroid-repo
+keydname: CN=Powerkrieger F-Droid repo
+keystorepass: {env: KEYSTORE_PASSWORD}
+keypass: {env: KEY_PASSWORD}

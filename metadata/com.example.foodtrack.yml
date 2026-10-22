@@ -1,0 +1,11 @@
+AuthorName: Powerkrieger
+Categories:
+  - Sports & Health
+WebSite: https://github.com/Powerkrieger/FoodTrack
+SourceCode: https://github.com/Powerkrieger/FoodTrack
+IssueTracker: https://github.com/Powerkrieger/FoodTrack/issues
+
+Name: FoodTrack
+Summary: 'Log meals with a photo of the food and of the bill'
+Description: |-
+  A minimal app for logging what you eat: a photo of the food, a photo of the bill, and the details in between. Text on receipts is read on-device.

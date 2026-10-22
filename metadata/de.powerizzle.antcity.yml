@@ -1,0 +1,11 @@
+AuthorName: Powerkrieger
+Categories:
+  - Games
+WebSite: https://github.com/Powerkrieger/AntCity
+SourceCode: https://github.com/Powerkrieger/AntCity
+IssueTracker: https://github.com/Powerkrieger/AntCity/issues
+
+Name: AntCity
+Summary: 'City-building game: gather resources, fortify your city, raid others'
+Description: |-
+  A city-building game. Collect resources, house your habitants, fortify your city, build siege equipment in the Hangar and raid other players.

@@ -1,0 +1,11 @@
+AuthorName: Powerkrieger
+Categories:
+  - Games
+WebSite: https://github.com/Powerkrieger/Musikster
+SourceCode: https://github.com/Powerkrieger/Musikster
+IssueTracker: https://github.com/Powerkrieger/Musikster/issues
+
+Name: Musikster
+Summary: 'Hitster-style music party game'
+Description: |-
+  A Hitster-style party game: listen to a song and place it on your timeline by release year.

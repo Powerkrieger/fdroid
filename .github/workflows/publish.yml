@@ -1,0 +1,60 @@
+name: Publish F-Droid repo
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install fdroidserver
+        run: pipx install fdroidserver==2.4.5
+
+      - name: Download release APKs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/fetch-apks.sh
+
+      - name: Decode index signing key
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > fdroid-repo.jks
+
+      - name: Build and sign index
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          chmod 600 config.yml
+          fdroid update
+          rm fdroid-repo.jks
+
+      - name: Assemble site
+        run: |
+          mkdir site
+          cp pages/* site/
+          mv repo site/repo
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v5

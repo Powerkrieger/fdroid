@@ -1,0 +1,11 @@
+AuthorName: Powerkrieger
+Categories:
+  - Sports & Health
+WebSite: https://github.com/Powerkrieger/NFLunkyBall
+SourceCode: https://github.com/Powerkrieger/NFLunkyBall
+IssueTracker: https://github.com/Powerkrieger/NFLunkyBall/issues
+
+Name: NFLunkyBall
+Summary: 'Run Flunkyball tournaments with live scores'
+Description: |-
+  Run Flunkyball tournaments: set up groups, record match results and let viewers follow live scores on their own phones, online or offline via Bluetooth LE.

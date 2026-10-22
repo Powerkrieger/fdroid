@@ -1,0 +1,11 @@
+AuthorName: Powerkrieger
+Categories:
+  - Games
+WebSite: https://github.com/Powerkrieger/ColorEater
+SourceCode: https://github.com/Powerkrieger/ColorEater
+IssueTracker: https://github.com/Powerkrieger/ColorEater/issues
+
+Name: Color Eater
+Summary: 'Cozy puzzle game where ants eat pixel art, one pixel at a time'
+Description: |-
+  A cozy little puzzle game where ants eat pixel art, one pixel at a time.
