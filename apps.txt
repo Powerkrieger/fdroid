@@ -1,6 +1,6 @@
 # GitHub repo                  APK asset names from the latest release (space-separated)
 Powerkrieger/AntCity           antcity.apk
-Powerkrieger/ColorEater        coloreater.apk
+Powerkrieger/ColorEater        coloreater.apk coloreater-kids.apk
 Powerkrieger/FoodTrack         foodtrack.apk
 Powerkrieger/GasTrack          app-release.apk
 Powerkrieger/GyroBoat          gyroboat.apk
@@ -8,4 +8,4 @@ Powerkrieger/Musikster         musikster-musikster-release.apk
 Powerkrieger/NFLunkyBall       nflunkyball.apk
 Powerkrieger/PowerUpGolf       powerupgolf.apk
 Powerkrieger/QuickMusicQuiz    app-release.apk
-Powerkrieger/RandomChess       shogun.apk
+Powerkrieger/RandomChess       randomchess.apk
