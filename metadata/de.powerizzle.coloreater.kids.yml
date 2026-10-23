@@ -1,0 +1,12 @@
+AuthorName: Powerkrieger
+License: MIT
+Categories:
+  - Games
+WebSite: https://github.com/Powerkrieger/ColorEater
+SourceCode: https://github.com/Powerkrieger/ColorEater
+IssueTracker: https://github.com/Powerkrieger/ColorEater/issues
+
+Name: Color Eater Kids
+Summary: 'Color Eater with a daily limit of 30 minutes of play'
+Description: |-
+  A cozy little puzzle game where ants eat pixel art, one pixel at a time. This edition limits play to 30 minutes a day: after that no new level can be started until tomorrow.

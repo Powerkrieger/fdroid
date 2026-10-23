@@ -43,13 +43,14 @@ jobs:
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           chmod 600 config.yml
+          mkdir -p repo/icons && cp icon.png repo/icons/icon.png
           fdroid update
           rm fdroid-repo.jks
 
       - name: Assemble site
         run: |
           mkdir site
-          cp pages/* site/
+          cp pages/* icon.png site/
           mv repo site/repo
 
       - uses: actions/upload-pages-artifact@v5

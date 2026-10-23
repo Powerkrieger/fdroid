@@ -13,9 +13,12 @@ APK of each app's latest GitHub release (`scripts/fetch-apks.sh`, apps listed in
 runs `fdroid update` to build and sign the index, and deploys `repo/` plus `pages/` to GitHub
 Pages. Nothing is stored in git except metadata; the APKs stay signed with each app's own key.
 
-App texts live in `metadata/<applicationId>.yml`, categories in `config/categories.yml`.
+App texts live in `metadata/<applicationId>.yml`, categories in `config/categories.yml`. fdroidserver
+doesn't take icons from APKs, so each app has `metadata/<applicationId>/en-US/icon.png`, rendered
+from its adaptive launcher icon with `scripts/render-icon.py <android-project> <out.png>`. The repo
+icon is `icon.svg`/`icon.png`.
 
-To add an app: add a line to `apps.txt` and a `metadata/<applicationId>.yml`. F-Droid only
+To add an app: add a line to `apps.txt`, a `metadata/<applicationId>.yml` and its icon. F-Droid only
 offers an update when the release's `versionCode` is higher than the installed one.
 
 ## Index signing key
@@ -28,4 +31,9 @@ copy in the password manager.
 To build the index locally (needs fdroidserver and the Android SDK):
 
     set -a; source fdroid-repo.env; set +a
-    ANDROID_HOME=~/Android/Sdk scripts/fetch-apks.sh && ANDROID_HOME=~/Android/Sdk fdroid update
+    scripts/fetch-apks.sh && mkdir -p repo/icons && cp icon.png repo/icons/
+    ANDROID_HOME=~/Android/Sdk fdroid update
+
+## License
+
+MIT, see [LICENSE](LICENSE).

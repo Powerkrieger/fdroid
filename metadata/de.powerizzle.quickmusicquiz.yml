@@ -1,0 +1,12 @@
+AuthorName: Powerkrieger
+License: MIT
+Categories:
+  - Games
+WebSite: https://github.com/Powerkrieger/QuickMusicQuiz
+SourceCode: https://github.com/Powerkrieger/QuickMusicQuiz
+IssueTracker: https://github.com/Powerkrieger/QuickMusicQuiz/issues
+
+Name: QuickMusicQuiz
+Summary: 'Guess the song from a short Spotify clip'
+Description: |-
+  Play a short clip from a Spotify playlist and guess the song.
