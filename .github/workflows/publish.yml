@@ -44,7 +44,9 @@ jobs:
         run: |
           chmod 600 config.yml
           mkdir -p repo/icons && cp icon.png repo/icons/icon.png
-          fdroid update
+          fdroid update --nosign
+          python3 scripts/add-v1-icons.py
+          fdroid signindex
           rm fdroid-repo.jks
 
       - name: Assemble site

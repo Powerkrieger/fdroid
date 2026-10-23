@@ -16,7 +16,9 @@ Pages. Nothing is stored in git except metadata; the APKs stay signed with each 
 App texts live in `metadata/<applicationId>.yml`, categories in `config/categories.yml`. fdroidserver
 doesn't take icons from APKs, so each app has `metadata/<applicationId>/en-US/icon.png`, rendered
 from its adaptive launcher icon with `scripts/render-icon.py <android-project> <out.png>`. The repo
-icon is `icon.svg`/`icon.png`.
+icon is `icon.svg`/`icon.png`. Since fdroidserver only puts icons it extracts from APKs into
+index-v1, `scripts/add-v1-icons.py` adds the metadata icons there before the index is signed, so
+v1 clients (Droid-ify, Neo Store, older F-Droid) show them too.
 
 To add an app: add a line to `apps.txt`, a `metadata/<applicationId>.yml` and its icon. F-Droid only
 offers an update when the release's `versionCode` is higher than the installed one.
@@ -32,7 +34,8 @@ To build the index locally (needs fdroidserver and the Android SDK):
 
     set -a; source fdroid-repo.env; set +a
     scripts/fetch-apks.sh && mkdir -p repo/icons && cp icon.png repo/icons/
-    ANDROID_HOME=~/Android/Sdk fdroid update
+    ANDROID_HOME=~/Android/Sdk fdroid update --nosign
+    python3 scripts/add-v1-icons.py && fdroid signindex
 
 ## License
 
