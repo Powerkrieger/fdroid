@@ -1,0 +1,20 @@
+AuthorName: Powerkrieger
+License: MIT
+Categories:
+  - Sports & Health
+WebSite: https://github.com/Powerkrieger/DriveHunt
+SourceCode: https://github.com/Powerkrieger/DriveHunt
+IssueTracker: https://github.com/Powerkrieger/DriveHunt/issues
+
+Name: Drückjagd Högel
+Summary: 'Plan drive hunts in Högel: fields, drives, markers, offline maps'
+Description: |-
+  Planning tool for the drive hunts (Treiben) of a Drückjagd on the Högel
+  municipality map. Every field is on the map; editors lay out the drives —
+  select areas, set a colour and number, draw the direction path, place the
+  drivers and standers — and a simulation walks the drive so you can judge
+  timing. Everyone can add markers (meeting point, stand, parking, danger,
+  game seen), measure distances and areas, export a drive as an A4 PDF, and
+  the map works offline in the field.
+
+  The app is a thin WebView shell around the web app at hunting.powerizzle.de.
