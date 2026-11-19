@@ -1,0 +1,21 @@
+AuthorName: Powerkrieger
+License: MIT
+Categories:
+  - Education
+WebSite: https://github.com/Powerkrieger/EnergieExam
+SourceCode: https://github.com/Powerkrieger/EnergieExam
+IssueTracker: https://github.com/Powerkrieger/EnergieExam/issues
+
+Name: Energieberatung Prüfungstrainer
+Summary: 'Practice for the BAFA Energieberatung qualification exam'
+Description: |-
+  Exam trainer for the BAFA "Qualifikationsprüfung Energieberatung"
+  (Wohngebäude and Nichtwohngebäude), in German.
+
+  The app ships without the exam questions: download the official question
+  catalogues and the Formelsammlung as PDFs from the BAFA website and import
+  them in the app. Everything stays on the device.
+
+  Learn with spaced repetition, repeat wrong answers and questions you marked
+  as difficult per chapter, look up the formulas each question needs, and see
+  the original PDF page next to every question.

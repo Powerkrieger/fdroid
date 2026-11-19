@@ -2,6 +2,7 @@
 Powerkrieger/AntCity           antcity.apk
 Powerkrieger/ColorEater        coloreater.apk coloreater-kids.apk
 Powerkrieger/DriveHunt         app-release.apk
+Powerkrieger/EnergieExam       energieberatung.apk
 Powerkrieger/FoodTrack         foodtrack.apk
 Powerkrieger/GasTrack          app-release.apk
 Powerkrieger/GyroBoat          gyroboat.apk
